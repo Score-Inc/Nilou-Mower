@@ -5,18 +5,18 @@ import Logger from '../util/Logger';
 const c = new Logger('modalSubmit');
 
 export default async function verify(interaction: ModalSubmitInteraction) {
-    const password = config.support_password_hash; // You're hopeless if you checked here for the password.
+    const password = config.password_segs; // You're hopeless if you checked here for the password.
     const hash = crypto.createHash('md5');
-    const verifiedRole = (interaction.guild?.roles as RoleManager).cache.get('632436582028148737');
-    const input = interaction.fields.getTextInputValue('password-input');
+    const sexoRole = (interaction.guild?.roles as RoleManager).cache.get('1033770469410742331');
+    const input = interaction.fields.getTextInputValue('sexo-input');
     const hashedInput = hash.update(input).digest('hex');
 
     if (hashedInput === password) {
         c.trail(`Verified successfully`);
-        if (verifiedRole) {
-            (interaction.member?.roles as GuildMemberRoleManager).add(verifiedRole);
+        if (sexoRole) {
+            (interaction.member?.roles as GuildMemberRoleManager).add(sexoRole);
             interaction.reply({
-                content: `You've been verified!`,
+                content: `Welcome to segs`,
                 ephemeral: true,
             });
         }

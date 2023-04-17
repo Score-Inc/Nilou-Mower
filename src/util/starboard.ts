@@ -3,7 +3,7 @@
  * @description Send a starboard message to #starboard
 */
 
-import { Message, MessageEmbed, TextChannel } from "discord.js";
+import { Message, EmbedBuilder, TextChannel, Colors } from "discord.js";
 import Logger from "./Logger";
 const c = new Logger("Starboard");
 
@@ -20,13 +20,13 @@ export default async function starboard(message: Message) {
 
     PINNED_MESSAGES.set(message.id, message);
 
-    const channel = message.client.channels.cache.get("988887511843606598") as TextChannel;
+    const channel = message.client.channels.cache.get("1039176854478790776") as TextChannel;
     if (!channel) return;
 
-    const embed = new MessageEmbed();
+    const embed = new EmbedBuilder();
     embed.setTitle(`🌟 Message starred in #${await (message.channel as TextChannel).name}`)
         .setDescription(message.content)
-        .setColor("YELLOW")
+        .setColor(Colors.Yellow)
         .setFooter({
             text: message.author?.tag || "Unknown",
             iconURL: `https://cdn.discordapp.com/avatars/${message.author?.id || 0}/${message.author?.avatar || 0}.png`

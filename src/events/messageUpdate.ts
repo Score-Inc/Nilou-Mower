@@ -6,6 +6,7 @@ const c = new Logger("messageUpdate", "cyan");
 
 export default async function run(oldMessage: Message<boolean> | PartialMessage, newMessage: Message<boolean> | PartialMessage) {
     if (newMessage.author?.bot) return;
+    if (oldMessage.content == newMessage.content) return;
 
     blacklist.forEach(b => {
         if (newMessage.content?.toLowerCase().split(' ').join('').includes(b.toLowerCase())) {

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import Logger from '../util/Logger';
-const c = new Logger('Grasscutter');
+const c = new Logger('Nilou');
 
 type Events = {
     root: {

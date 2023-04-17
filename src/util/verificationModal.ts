@@ -7,7 +7,7 @@ const modal = new ModalBuilder()
 const passwordInput = new TextInputBuilder()
     .setCustomId('password-input')
     .setLabel('Password')
-    .setPlaceholder('Enter your password')
+    .setPlaceholder('Enter Verification Password')
     .setStyle(TextInputStyle.Short)
 
 const row = new ActionRowBuilder<TextInputBuilder>().addComponents(passwordInput);

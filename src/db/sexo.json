@@ -1,8 +1,8 @@
 [
     {
-        "title": "Welcome to Score-Inc !",
+        "title": "???",
         "url": "https://discord.gg/2TTSUZZ",
-        "description": "Please make sure you read and follow the server <#1021345477796581408> before verifying.",
+        "description": "???",
         "color": 39129,
         "author": {
             "icon_url": "https://cdn.discordapp.com/avatars/367308033052770307/da7eb732770478ad67e54ab268bc1178.png",
@@ -12,18 +12,23 @@
             "url": "https://probot.media/lfTbfNdW6b.png"
         },
         "image": {
-            "url": "https://probot.media/xJ8LklsBVq.png"
+            "url": "https://probot.media/LhGsERSmX4.jpg"
         },
         "fields": [
             {
-                "name": "Verifying :",
-                "value": "To access other channels, please verify yourself by clicking the verify button below. The password is hidden in the [wiki](https://github.com/Score-Inc/.github/wiki).",
+                "name": "???",
+                "value": "To access ???, please ??? below",
+                "inline": false
+            },
+            {
+                "name": "Hint",
+                "value": "MD5 of the original password, but 8x converted to hash. (what is the string of the hash ?)",
                 "inline": false
             }
         ],
         "footer": {
             "icon_url": "https://cdn.discordapp.com/avatars/367308033052770307/da7eb732770478ad67e54ab268bc1178.png",
-            "text": "If you have any issues verifying, please contact a moderator."
+            "text": "If you have any issues ???, please ???."
         }
     }
 ]

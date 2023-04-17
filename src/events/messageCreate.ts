@@ -25,7 +25,7 @@ source.forEach(s => {
     actionList.push({ action: s.action, keywords: s.keywords, action_cn: s.action_cn });
 });
 
-const $support = '1019987283593674883';
+const $support = '1022209457217871892';
 
 function filterInvis(content: string) {
     if (content.search(/[^\u0000-\u007E]/g) >= -1)
@@ -38,7 +38,7 @@ export default async function run(message: Message) {
     try {
         if (message.author.bot) return;
 
-        if (message.channelId === "1028327705571238009" && message.deletable) { // #verify
+        if (message.channelId === "1028679012341534740" && message.deletable) { // #verify
             message.delete();
         }
 

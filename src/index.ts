@@ -5,9 +5,11 @@ import register from './util/registercommands';
 import getEvents, { findEvent } from './events/eventHandler';
 import verify from './events/modalSubmit';
 import verifyInit from './events/button';
+import sexo from './events/sexoSubmit';
+import sexoInit from './events/sexobutton';
 import { Routes } from 'discord-api-types/v10';
 import Logger from './util/Logger';
-const c = new Logger('Lawnmower');
+const c = new Logger('Nilou');
 const ci = new Logger('Command', 'blue');
 const ce = new Logger('Event', 'yellow');
 
@@ -45,6 +47,14 @@ client.on('interactionCreate', async (interaction) => {
     } else if(interaction.isButton()) {
         if(interaction.customId === 'verification-button') {
             verifyInit(interaction);
+        }
+    } if (interaction.isModalSubmit()) {
+        if (interaction.customId === 'sexo-modal') {
+            sexo(interaction);
+        }
+    } else if (interaction.isButton()) {
+        if (interaction.customId === 'sexo-button') {
+            sexoInit(interaction);
         }
     }
 });
