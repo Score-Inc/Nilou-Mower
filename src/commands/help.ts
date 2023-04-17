@@ -7,8 +7,8 @@ async function run(interaction: CommandInteraction) {
         embeds: [
             {
                 type: "rich",
-                title: `Grasscutters`,
-                description: `An unofficial community for the Grasscutter server.\n\n**Permanent Invite Link**: https://discord.gg/T5vZU6UyeG\n**GitHub Repository**: https://github.com/Melledy/Grasscutter\n**Trello Board**: https://trello.com/b/ij3ICC8K/features`,
+                title: `Score Inc.`,
+                description: `An official community server for the Score Inc server\n\n**Permanent Invite Link**: https://discord.gg/2TTSUZZ\n**GitHub Repository**: https://github.com/Score-Inc\n\n- Powered by [Grasscutters](https://github.com/Grasscutters)`,
                 color: 0x03fc41
             }
         ]
