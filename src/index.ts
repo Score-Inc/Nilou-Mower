@@ -1,5 +1,5 @@
 import { REST } from '@discordjs/rest';
-import { Client, Partials } from 'discord.js';
+import { Client, Partials, GatewayIntentBits } from 'discord.js';
 import getConfig from './util/config';
 import register from './util/registercommands';
 import getEvents, { findEvent } from './events/eventHandler';
